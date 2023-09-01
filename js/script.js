@@ -35,7 +35,7 @@ const handleCategoryId = async (categoryId) => {
         div.innerHTML = `
             <div class="card card-compact rounded-lg ">
                 <div class="relative">
-                        <img src =${cards.thumbnail} class ="lg:w-[312] lg:h-[200px]">
+                        <img src =${cards.thumbnail} class ="w-full lg:w-[312] h-[200px]">
                         <div >
                             ${cards.others.posted_date ? `
                              <div class="bg-black text-white rounded-lg absolute bottom-3 right-12 lg:bottom-3 lg:right-3 p-2">
