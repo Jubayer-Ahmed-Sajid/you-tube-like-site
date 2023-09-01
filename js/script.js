@@ -62,6 +62,7 @@ const handleCategoryId = async (categoryId) => {
 
     });
     console.log(cards)
+    
     if (cards.length === 0) {
         const empty = document.getElementById('card-container');
         const errorMessage = document.createElement('div');
@@ -80,32 +81,10 @@ const handleCategoryId = async (categoryId) => {
 
 }
 
-
-
-
-
-
-
-
-
-const sortAndRenderByViews= () =>{
-    const cardContainer = document.getElementById('card-container');
-    // const cards = [...cardContainer.children];
-    console.log () // Convert the HTMLCollection to an array
-  
-    // Sort the cards by views (assuming views is a numerical property)
-    cards.sort((a, b) => {
-      const viewsA = parseInt(a.querySelector('.views').textContent, 10);
-      const viewsB = parseInt(b.querySelector('.views').textContent, 10);
-      return viewsB - viewsA; // Sort in descending order
-    });
-  
-    // Re-append the sorted cards to the container
-    cards.forEach(card => cardContainer.appendChild(card));
-  }
-
 handleCategory();
 handleCategoryId(1000);
+
+
 
 
 
