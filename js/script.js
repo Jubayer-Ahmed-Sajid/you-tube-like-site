@@ -34,11 +34,11 @@ const handleCategoryId = async (categoryId) => {
         const div = document.createElement('div');
         div.innerHTML = `
             <div class="card card-compact rounded-lg ">
-                <div>
-                        <img src =${cards.thumbnail} class = "h-[200px]">
-                        <div>
+                <div class="relative">
+                        <img src =${cards.thumbnail} class ="lg:w-[312] lg:h-[200px]">
+                        <div >
                             ${cards.others.posted_date ? `
-                             <div class="bg-black text-white rounded-lg absolute lg:bottom-3 lg:right-3 p-2">
+                             <div class="bg-black text-white rounded-lg absolute bottom-3 right-12 lg:bottom-3 lg:right-3 p-2">
                              <p id="posted">${Math.floor(cards.others.posted_date / 3600)}hrs ${Math.floor((cards.others.posted_date % 3600) / 60)}min</p>
                         </div>
                     ` : ''}
@@ -68,7 +68,7 @@ const handleCategoryId = async (categoryId) => {
         const errorMessage = document.createElement('div');
         errorMessage.innerHTML = `
           <div class="text-center">
-            <img src="images/icon.png" alt="Error Icon" class="mb-4 ml-32 lg:ml-[500px]"/>
+            <img src="./images/icon.png" alt="Error Icon" class="mb-4 ml-32 lg:ml-[500px]"/>
             <h2 class="text-4xl font-bold lg:ml-[400px] w-96"> Oops!! Sorry, There is no content here</h2>
           </div>
         `;
@@ -77,25 +77,7 @@ const handleCategoryId = async (categoryId) => {
 
     }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Function to sort the cards by view
 function sortByViews(cards) {
     return cards.sort((a, b) => {
