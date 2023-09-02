@@ -67,7 +67,7 @@ const handleCategoryId = async (categoryId) => {
         errorMessage.innerHTML = `
           <div class="text-center">
             <img src="js/icon.png" alt="Error Icon" class="mb-4 ml-32 lg:ml-[500px]"/>
-            <h2 class="text-3xl lg:text-4xl font-bold lg:ml-[400px]"> Oops!! Sorry, There is no content here</h2>
+            <h2 class="text-3xl lg:text-4xl w-full font-bold lg:ml-[400px] lg:w-96"> Oops!! Sorry, There is no content here</h2>
           </div>
         `;
 
