@@ -67,7 +67,7 @@ const handleCategoryId = async (categoryId) => {
         errorMessage.innerHTML = `
           <div class="text-center">
             <img src="js/icon.png" alt="Error Icon" class="mb-4 ml-32 lg:ml-[500px]"/>
-            <h2 class="text-3xl lg:text-4xl font-bold lg:ml-[400px] w-96"> Oops!! Sorry, There is no content here</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold lg:ml-[400px]"> Oops!! Sorry, There is no content here</h2>
           </div>
         `;
 
@@ -146,7 +146,6 @@ const handleSortView = async () => {
 
 // Call the fetchData function to fetch and display the initial card data
 handleSortView('https://openapi.programming-hero.com/api/videos/category/1000');
-
 
 handleCategory();
 // handleCategoryId(1000);
